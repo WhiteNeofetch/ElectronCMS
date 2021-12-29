@@ -1,20 +1,38 @@
 <template>
-  <div id="app">
+  <v-app>
+    <!-- <v-app-bar app color="primary" dark>123 </v-app-bar> -->
+
+    <v-main>
+      <router-view />
+    </v-main>
+
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/type1">type1</router-link> |
+      <router-link to="/type2">type2</router-link> |
+      <router-link to="/type3">type3</router-link> |
+      <router-link to="/type4">type4</router-link> |
+      <router-link to="/type5">type5</router-link> |
+      <router-link to="/type6">type6</router-link> |
+      <router-link to="/type7">type7</router-link> |
     </div>
-    <router-view/>
-  </div>
+  </v-app>
 </template>
 
-<style lang="scss">
+<script>
+export default {
+  name: "App",
+
+  data: () => ({
+    //
+  }),
+};
+</script>
+
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
@@ -28,5 +46,7 @@
       color: #42b983;
     }
   }
+  margin: 0px auto;
 }
+
 </style>

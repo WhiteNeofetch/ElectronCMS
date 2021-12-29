@@ -1,0 +1,10 @@
+<template>
+<v-btn
+  color="secondary"
+  elevation="4"
+  fab
+  icon
+>
+<v-icon>mdi-home</v-icon>
+</v-btn>
+</template>
